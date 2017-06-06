@@ -3,6 +3,10 @@
 		$year = $_POST["post2"];
 		$month = $_POST["post3"];
 		$day = $_POST["post4"];
+		// $id = 'leastb';
+		// $year = 2017;
+		// $month = 6;
+		// $day = 7;
 		$con = mysqli_connect("localhost", "root", "leastb", "fcm");
 		$query = "SELECT * FROM watchday WHERE id='$id' and year = $year and month = $month and day = $day;";
 		$result = mysqli_query($con, $query);

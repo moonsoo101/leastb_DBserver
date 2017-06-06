@@ -1,6 +1,5 @@
 <?php
 	$id = $_POST["post1"];
-	$id = 'moonsoo101';
 		$con = mysqli_connect("localhost", "root", "leastb", "fcm");
  		mysqli_set_charset($con,"utf8");
  		if (mysqli_connect_errno($con))
