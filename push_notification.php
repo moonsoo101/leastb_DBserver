@@ -50,14 +50,16 @@ function send_notification ($tokens, $message)
 	mysqli_close($conn);
 
         $Message = $_POST['message']; //폼에서 입력한 메세지를 받음
-				$ImgUrl = $_POST['imgurl'];
+				$filename = $_POST['imgurl'];
+				$ImgUrl = 'http://ec2-13-124-33-214.ap-northeast-2.compute.amazonaws.com/darknet/'.$filename.'.jpg';
 
 
 
 		// $myMessage = "위험물이 감지되었습니다.";
 
 	$message = array("message" => $Message,
-										"imgurl" => $ImgUrl);
+										"imgurl" => $ImgUrl,
+										"filename" => $filename);
 	$message_status = send_notification($tokens, $message);
 	echo $message_status;
 

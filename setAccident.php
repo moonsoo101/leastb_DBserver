@@ -1,6 +1,5 @@
 <?php
-$filename = $_POST['filename'];
-$filename = 'leastb201768-1496901622671';
+$filename = $_POST['post1'];
 // $filename = "auto";
     $con = mysqli_connect("localhost", "root", "leastb", "fcm");
   	mysqli_set_charset($con,"utf8");
